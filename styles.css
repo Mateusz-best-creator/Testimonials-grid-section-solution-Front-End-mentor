@@ -1,0 +1,163 @@
+/*
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.main-element {
+    margin-top: 5rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.first-guy-element {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+.second-guy-element {
+    background-color: hsl(217, 19%, 35%);
+    color:white;
+}
+
+.third-guy-element {
+    background-color: white;
+}
+
+.fourth-guy-element {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+.fifth-guy-element {
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.first-guy-element, .second-guy-element, .third-guy-element, .fourth-guy-element, .fifth-guy-element {
+    padding: 2rem;
+    margin-top: 2.5rem;
+    border-radius: 15px;
+}
+
+.presentation-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name {
+    font-size: 1.1rem;
+}
+
+.quick-note-element h5 {
+    color: hsl(0, 0%, 81%);
+    font-size: 1rem;
+}
+
+.presentation-element .quick-note-element {
+    margin-left: 1.5rem;
+}
+
+img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    color: hsl(0, 0%, 81%);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.third-guy-element p, .fifth-guy-element p {
+    color: gray;
+}
+
+@media(min-width: 800px){
+    .main-element {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        gap: 2rem;
+    }
+
+    .left-content-element {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .right-element {
+        width: 25%;
+    }
+
+    .fifth-guy-element {
+        width: 100%;
+        height: 96%;
+    }
+
+    .top-left-content-container {
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+        gap: 2rem;
+    }
+
+    .bottom-left-content-container {
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+        gap: 2rem;
+    }
+
+    .first-guy-element, .fourth-guy-element {
+        flex-basis: 65%;
+    }
+
+    .second-guy-element, .third-guy-element {
+        flex-basis: 35%;
+    }
+
+    .fifth-guy-element p {
+        margin-top: 4rem;
+    }
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
